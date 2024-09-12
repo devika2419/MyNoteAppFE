@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
+# MyNoteApp - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the MyNoteApp frontend repository! This is a React-based web application for note-taking, integrated with a backend built using Express and MySQL.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Authentication:** Secure sign-up and login.
+- **File Upload:** Upload and manage files with preview capabilities.
+- **Interactive UI:** Seamless and responsive design.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React.js:** For building the user interface.
+- **Material-UI:** For additional UI components.
+- **Express.js:** For server operations.
+- **MySQL:** Database.
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prerequisites
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Ensure you have the following installed on your local machine:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- [Node.js](https://nodejs.org/) (version 14.x or above recommended)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/devika2419/MyNoteAppFE.git
+   cd MyNoteAppFE
+
+2. Install dependencies
+
+   ~~~bash
+   npm i
+
+3. Run the application
+
+   ~~~bash
+   npm run dev
