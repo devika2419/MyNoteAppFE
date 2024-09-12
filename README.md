@@ -12,8 +12,8 @@ Welcome to the MyNoteApp frontend repository! This is a React-based web applicat
 
 - **React.js:** For building the user interface.
 - **Material-UI:** For additional UI components.
-- **Express.js:** For server operations.
-- **MySQL:** Database.
+- **Express.js:** Used for handling server operations, including routing, middleware management, and server-side logic.
+- **MySQL:** Used for managing and storing data in a relational database.
 
 
 ## Getting Started
