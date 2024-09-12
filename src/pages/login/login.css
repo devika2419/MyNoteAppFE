@@ -1,0 +1,26 @@
+.login-main-box{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/back-img.jpeg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+
+
+}
+
+.login-section{
+    margin: 10%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Media query for screens with a max-width of 1020px */
+@media (max-width: 1000px) {
+    .login-section{
+        margin: 10%;
+        background-color: rgba(255, 255, 255, 0.0);
+    }
+  }

@@ -1,0 +1,109 @@
+.main-upload-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    padding-top: 60px; /* Adjust this based on your Navbar height */
+    box-sizing: border-box; /* Ensure padding is included in height/width */
+    background-image: url('/back-img.jpeg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+
+}
+
+
+.display-component{
+    position: relative;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-main{
+    height: 100%;
+    width: 100dvb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+    margin: 2%;
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+
+.upload-btn {
+    
+    width: 20%;
+    color: #1E1E1E !important; 
+    border: 1px solid #000000 !important;
+    border-radius: 15%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px 20px;
+}
+
+.upload-btn:hover {
+    background-color: #1E1E1E;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.upload-btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px #FCF55F;
+}
+
+.files-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; /* Center align all the file boxes */
+    gap: 1rem;
+    margin-top: 20px;
+    /* flex-direction: column; */
+}
+
+
+  .files-container img {
+    max-width: 100%;
+    height: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  .files-container img:hover {
+    transform: scale(1.05);
+  }
+  
+
+  .file-boxes {
+    width: 200px; /* Fixed width to ensure consistency */
+    height: auto;
+    margin: 0 auto; /* Center align the box */
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white background for the glass effect */
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Glass effect shadow */
+    backdrop-filter: blur(10px); /* The actual glass effect (blur) */
+    -webkit-backdrop-filter: blur(10px); /* Support for Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Light border for contrast */
+    text-align: center; /* Center text within the box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.file-boxes:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 10px 40px rgba(31, 38, 135, 0.5); /* Stronger shadow on hover */
+}
+
+@media (max-width: 1020px){
+    .files-container{
+        flex-direction: column;
+    }
+
+}

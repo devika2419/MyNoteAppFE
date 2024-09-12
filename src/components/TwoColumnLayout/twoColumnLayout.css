@@ -1,0 +1,44 @@
+Base styles for Grid layout
+.input-boxes{
+    display: flex;
+    align-items: stretch;
+    padding: 1rem;
+    width: 100%;
+
+}
+
+.image-column{
+    padding: 1rem;
+}
+
+.input-column{
+    padding: 1rem;
+
+    padding-left: 32px;
+    width: 100%;
+    justify-content: center;
+}
+
+  
+  /* Media query for responsive layout */
+  @media (max-width: 1020px) {
+    .input-boxes{
+        width: 100%-2px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3%;
+    
+    }
+    .input-column{
+      order: 1; /* Moves the content column below the image column */
+      padding: 1rem;
+      display: flex;
+      flex-direction: row;
+
+      width: 100%-2px;
+
+    }
+  }
+  

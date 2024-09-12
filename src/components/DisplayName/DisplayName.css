@@ -1,0 +1,15 @@
+.display-main-box{
+    /* background-color:  rgba(255, 255, 255, 0.3); */
+    width: 80%;
+    
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .display-main-box{
+        margin: 3.5, 5%
+    }
+  }

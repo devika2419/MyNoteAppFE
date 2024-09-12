@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+:root {
+  --main-font: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif, 'Quicksand';
+  --main-bg-color: #f8d97c;
+  --main-padding: 2rem;
+}
+
+/* Styles applied to the body */
+body {
+  font-family: var(--main-font);
+  background-color: var(--main-bg-color);
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+/* Media query for screens with a max-width of 1020px */
+@media (max-width: 1020px) {
+  body {
+    overflow-y: scroll;
+  }
+}

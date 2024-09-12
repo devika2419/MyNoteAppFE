@@ -1,0 +1,11 @@
+.notes-main-box{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #5F6F7F, black);
+    color: #FCF55F;
+
+
+}
